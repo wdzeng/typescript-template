@@ -1,0 +1,27 @@
+{
+  "name": "typescript-template",
+  "version": "0.1.0",
+  "description": "A typescript project template",
+  "author": "hyperbola",
+  "packageManager": "pnpm@8.6.6",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsc-alias && ncc build dist/tsc-out/main.js -o dist --minify --target es2022",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.19",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "@vercel/ncc": "^0.36.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "tsc-alias": "^1.8.7",
+    "typescript": "^5.1.6"
+  },
+  "license": "MIT"
+}
