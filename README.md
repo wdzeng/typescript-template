@@ -39,7 +39,7 @@ Prevent CJS-only syntax. See [Differences between ES modules and CommonJS](https
 The template is using path alias `@` which is set to `src`.
 
 ```ts
-import helloworld from `@/helloworld.js`
+import helloworld from '@/helloworld.js'
 ```
 
 Please update `paths` field in tsconfig to change path aliases.
