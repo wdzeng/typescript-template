@@ -16,6 +16,7 @@
     "removeComments": true,
     "newLine": "lf",
     "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
     // Type checking options.
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
