@@ -34,14 +34,6 @@ Prevent CJS-only syntax. See [Differences between ES modules and CommonJS](https
 ✅ const currentDir = path.dirname(url.fileURLToPath(import.meta.url))
 ```
 
-Always add `.js` file extensions when importing from other modules, even if this is a typescript
-project.
-
-```ts
-❌ import helloworld from './helloworld'
-✅ import helloworld from './helloworld.js'
-```
-
 ### Path Alias
 
 The template is using path alias `@` which is set to `src`.

@@ -4,7 +4,6 @@
   "description": "A typescript project template",
   "author": "hyperbola",
   "packageManager": "pnpm@8.6.6",
-  "type": "module",
   "scripts": {
     "build": "tsc && tsc-alias && ncc build dist/tsc-out/main.js -o dist --minify --target es2022",
     "clean": "rm -rf dist",

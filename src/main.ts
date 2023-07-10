@@ -1,3 +1,3 @@
-import helloworld from '@/helloworld.js'
+import helloworld from '@/helloworld'
 
 helloworld()

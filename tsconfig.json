@@ -3,7 +3,7 @@
     // Environment and module options.
     "target": "es2022",
     "module": "es2022",
-    "moduleResolution": "node16", // https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/#ecmascript-module-support-in-node-js
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "lib": ["ES2022"],
     "rootDir": "src",
