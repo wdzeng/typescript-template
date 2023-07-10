@@ -1,30 +1,75 @@
 # TypeScript Template
 
-A TypeScript project template integrates with [ESLint](https://eslint.org/) and
-[Prettier](https://prettier.io/).
+My typescript project template. Integrates with:
 
-## Build Project
+- Node.js v18
+- ECMAScript 2022
+- ESM modules
+- TypeScript v5
+- ESLint/Prettier
 
-Use `tsc` and [`@vercel/ncc`](https://github.com/vercel/ncc) to transpile TypeScript files into a
-single JavaScript file.
+## Node and TypeScript Configurations
 
-```shell
-pnpm build
-node ./dist/index.js
+### ES2022
+
+This template integrates with ECMAScript 2022, so `target` and `module` fields in tsconfig are set
+to `es2022`.
+
+### ES Module
+
+This template is using ES module (ESM), so `type` is set to `module` in package.json and
+`moduleResolution` set to `node16` in tsconfig.
+
+Replace `require` with `import`; do not use `export` or `modules.export`.
+
+```js
+❌ const fs = require('fs')
+✅ import fs from 'node:fs'
 ```
+
+Prevent CJS-only syntax. See [Differences between ES modules and CommonJS](https://nodejs.org/api/esm.html#differences-between-es-modules-and-commonjs).
+
+```js
+❌ const currentDir = __dirname
+✅ const currentDir = path.dirname(url.fileURLToPath(import.meta.url))
+```
+
+Always add `.js` file extensions when importing from other modules, even if this is a typescript
+project.
+
+```ts
+❌ import helloworld from './helloworld'
+✅ import helloworld from './helloworld.js'
+```
+
+### Path Alias
+
+The template is using path alias `@` which is set to `src`.
+
+```ts
+import helloworld from `@/helloworld.js`
+```
+
+Please update `paths` field in tsconfig to change path aliases.
 
 ## Linting
 
-Integrates with ESLint and Prettier. Use ESLint as default formatter if you are developing with
-VSCode.
+This template leverages ESLint and Prettier, using my custom eslint configurations at
+[`wdzeng/eslint-config`](https://github.com/wdzeng/eslint-config).
+
+Please use ESLint as default formatter if you are developing with VSCode, or use `pnpm lint` command
+to lint codes under src directory.
 
 ```shell
 pnpm lint
 ```
 
-## Further Reading
+## Build Project
 
-You must not include `type: module` in the package.json file when configuring the `moduleResolution`
-to use `node16` in tsconfig. This is due to a stupid new policy that mandates the inclusion of the
-`.js` file extension in import statements, even when working with TypeScript files. You can find
-more information about this policy [here](https://github.com/microsoft/TypeScript/issues/40878).
+This template is using `tsc` and [`@vercel/ncc`](https://github.com/vercel/ncc) to transpile all
+TypeScript files into a single JavaScript file.
+
+```shell
+pnpm build
+node ./dist/index.js
+```
