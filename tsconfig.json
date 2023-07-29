@@ -5,7 +5,12 @@
     "module": "es2022",
     "moduleResolution": "bundler",
     "esModuleInterop": true,
-    "lib": ["ES2022"],
+    "lib": [
+      "ES2022",
+      // Uncomment these to access document and fetch API.
+      // "DOM",
+      // "DOM.Iterable"
+    ],
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
