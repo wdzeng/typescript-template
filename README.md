@@ -18,9 +18,9 @@ to `es2022`.
 ### ES Module
 
 This template is using ES module (ESM), so `type` is set to `module` in package.json and
-`moduleResolution` set to `node16` in tsconfig.
+`moduleResolution` set to `bundler` in tsconfig.
 
-Replace `require` with `import`; do not use `export` or `modules.export`.
+Replace `require` with `import`; do not use `exports` or `modules.export`.
 
 ```js
 ❌ const fs = require('fs')
@@ -58,10 +58,11 @@ pnpm lint
 
 ## Build Project
 
-This template is using `tsc` and [`@vercel/ncc`](https://github.com/vercel/ncc) to transpile all
-TypeScript files into a single JavaScript file.
+This template is using [`tsx`](https://github.com/esbuild-kit/tsx) for development, and
+[`esbuild`](https://github.com/evanw/esbuild) to transpile all TypeScript files into a single
+JavaScript file.
 
 ```shell
 pnpm build
-node ./dist/index.js
+node dist/index.cjs
 ```
