@@ -15,17 +15,18 @@
   },
   "packageManager": "pnpm@8.6.10",
   "scripts": {
-    "build": "tsc && tsc-alias && ncc build dist/tsc-out/main.js -o dist --minify --target es2022",
+    "dev": "tsx src/main.ts",
+    "build": "./build.cjs",
     "clean": "rm -rf dist",
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
     "@types/node": "^18.16.19",
-    "@vercel/ncc": "^0.36.1",
+    "esbuild": "^0.18.17",
     "eslint": "^8.46.0",
     "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.4.1",
     "prettier": "^3.0.0",
-    "tsc-alias": "^1.8.7",
+    "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   }
 }
