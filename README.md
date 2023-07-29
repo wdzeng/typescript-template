@@ -44,6 +44,14 @@ import helloworld from '@/helloworld.js'
 
 Please update `paths` field in tsconfig to change path aliases.
 
+## Development
+
+This template is using [`tsx`](https://github.com/esbuild-kit/tsx) for development.
+
+```shell
+pnpm dev
+```
+
 ## Linting
 
 This template leverages ESLint and Prettier, using my custom eslint configurations at
@@ -58,9 +66,8 @@ pnpm lint
 
 ## Build Project
 
-This template is using [`tsx`](https://github.com/esbuild-kit/tsx) for development, and
-[`esbuild`](https://github.com/evanw/esbuild) to transpile all TypeScript files into a single
-JavaScript file.
+This template is using [`esbuild`](https://github.com/evanw/esbuild) to transpile all TypeScript
+files into a single JavaScript file.
 
 ```shell
 pnpm build
