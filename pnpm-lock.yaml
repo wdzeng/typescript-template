@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^8.46.0
     version: 8.46.0
   eslint-config-wdzeng:
-    specifier: github:wdzeng/eslint-config#semver:^0.4.1
-    version: github.com/wdzeng/eslint-config/3c5f662f0b4542a720d53feb271d8e68c1ecba88(eslint@8.46.0)(prettier@3.0.0)(typescript@5.1.6)
+    specifier: github:wdzeng/eslint-config#semver:^0.4.2
+    version: github.com/wdzeng/eslint-config/4135afdd9159f1562083cb4b71d84343bba0245c(eslint@8.46.0)(prettier@3.0.0)(typescript@5.1.6)
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
@@ -2722,11 +2722,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/wdzeng/eslint-config/3c5f662f0b4542a720d53feb271d8e68c1ecba88(eslint@8.46.0)(prettier@3.0.0)(typescript@5.1.6):
-    resolution: {tarball: https://codeload.github.com/wdzeng/eslint-config/tar.gz/3c5f662f0b4542a720d53feb271d8e68c1ecba88}
-    id: github.com/wdzeng/eslint-config/3c5f662f0b4542a720d53feb271d8e68c1ecba88
+  github.com/wdzeng/eslint-config/4135afdd9159f1562083cb4b71d84343bba0245c(eslint@8.46.0)(prettier@3.0.0)(typescript@5.1.6):
+    resolution: {tarball: https://codeload.github.com/wdzeng/eslint-config/tar.gz/4135afdd9159f1562083cb4b71d84343bba0245c}
+    id: github.com/wdzeng/eslint-config/4135afdd9159f1562083cb4b71d84343bba0245c
     name: eslint-config-wdzeng
-    version: 0.4.1
+    version: 0.4.2
     dependencies:
       '@typescript-eslint/eslint-plugin': 6.2.0(@typescript-eslint/parser@6.2.0)(eslint@8.46.0)(typescript@5.1.6)
       '@typescript-eslint/parser': 6.2.0(eslint@8.46.0)(typescript@5.1.6)

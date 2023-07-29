@@ -24,7 +24,7 @@
     "@types/node": "^18.16.19",
     "esbuild": "^0.18.17",
     "eslint": "^8.46.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.4.1",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.4.2",
     "prettier": "^3.0.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
