@@ -3,6 +3,7 @@
 My typescript project template. Integrates with:
 
 - Node.js v20
+- Pnpm
 - ECMAScript 2022
 - ESM modules
 - TypeScript v5
