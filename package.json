@@ -21,12 +21,12 @@
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@types/node": "^18.16.19",
-    "esbuild": "^0.18.17",
-    "eslint": "^8.46.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.4.2",
-    "prettier": "^3.0.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.8.9",
+    "esbuild": "^0.19.5",
+    "eslint": "^8.52.0",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.5.0",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
   }
 }
