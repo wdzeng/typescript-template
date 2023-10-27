@@ -13,7 +13,7 @@
     "url": "https://github.com/wdzeng/typescript-template/issues",
     "email": "me@hyperbola.me"
   },
-  "packageManager": "pnpm@8.6.10",
+  "packageManager": "pnpm@^8.9.2",
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "pnpm clean && ./build.cjs",
