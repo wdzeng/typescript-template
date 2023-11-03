@@ -9,7 +9,7 @@ const options = {
   outfile: './dist/index.cjs',
   bundle: true,
   platform: 'node',
-  target: 'node18',
+  target: 'node20',
   minify: true,
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
