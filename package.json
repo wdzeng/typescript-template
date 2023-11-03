@@ -16,7 +16,7 @@
   "packageManager": "pnpm@^8.9.2",
   "scripts": {
     "dev": "tsx src/main.ts",
-    "build": "pnpm clean && ./build.cjs",
+    "build": "pnpm clean && ./build/index.cjs",
     "clean": "rm -rf dist",
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
