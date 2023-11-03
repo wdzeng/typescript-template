@@ -21,10 +21,10 @@
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
+    "@types/node": "^20.8.10",
     "esbuild": "^0.19.5",
-    "eslint": "^8.52.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.5.0",
+    "eslint": "^8.53.0",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.5.1",
     "prettier": "^3.0.3",
     "tsx": "^3.14.0",
     "typescript": "^5.2.2"
