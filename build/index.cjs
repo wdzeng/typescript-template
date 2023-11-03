@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const fs = require('node:fs')
 const path = require('node:path')
 
 const { build } = require('esbuild')
@@ -14,8 +15,7 @@ const options = {
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
     'import.meta.url': 'import_meta_url',
-    // Inject version by replacing `__VERSION__` in source code
-    // '__VERSION__': JSON.stringify(JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'))).version)
+    '__VERSION__': JSON.stringify(JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'))).version)
   },
   inject: [path.join(__dirname, 'import.meta.url-polyfill.cjs')],
 }
