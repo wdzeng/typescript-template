@@ -13,9 +13,9 @@ const options = {
   target: 'node20',
   minify: true,
   define: {
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
     'import.meta.url': 'import_meta_url',
-    '__VERSION__': JSON.stringify(JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'))).version)
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
+    'process.env.VERSION': JSON.stringify(JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'))).version)
   },
   inject: [path.join(__dirname, 'import.meta.url-polyfill.cjs')],
 }
