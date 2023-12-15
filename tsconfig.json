@@ -18,6 +18,9 @@
     },
     "strict": true,
     "alwaysStrict": true,
+    // This may cause some inconvenient behavior.
+    // https://github.com/microsoft/TypeScript/issues/56389
+    "noUncheckedIndexedAccess": true
   },
   "include": ["src/**/*.ts", "types/global.d.ts"]
 }
