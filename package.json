@@ -14,7 +14,7 @@
     "url": "git+https://github.com/wdzeng/typescript-template.git"
   },
   "bugs": "https://github.com/wdzeng/typescript-template/issues",
-  "packageManager": "pnpm@^8.9.2",
+  "packageManager": "pnpm@^8.12.1",
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "pnpm clean && ./build/index.cjs",
@@ -22,12 +22,12 @@
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
-    "esbuild": "^0.19.5",
-    "eslint": "^8.53.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.5.1",
-    "prettier": "^3.0.3",
-    "tsx": "^3.14.0",
-    "typescript": "^5.2.2"
+    "@types/node": "^20.10.4",
+    "esbuild": "^0.19.9",
+    "eslint": "^8.55.0",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.6.0",
+    "prettier": "^3.1.1",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
   }
 }
