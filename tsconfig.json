@@ -6,10 +6,10 @@
     "moduleResolution": "bundler",
     "esModuleInterop": true,
     "lib": [
-      "ES2022",
+      "es2022",
       // Uncomment these to access document and fetch API.
-      // "DOM",
-      // "DOM.Iterable"
+      // "dom",
+      // "dom.iterable"
     ],
     "rootDir": "src",
     "baseUrl": ".",
