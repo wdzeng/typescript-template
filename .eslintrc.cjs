@@ -16,4 +16,11 @@ module.exports = {
     // Your custom rules go here ...
     'prettier/prettier': 'warn'
   },
+  overrides: [{
+    files: ['**/*.test.ts'],
+    rules: {
+      // It is OK to import anything in test files.
+      'n/no-unpublished-import': 'off',
+    }
+  }]
 }

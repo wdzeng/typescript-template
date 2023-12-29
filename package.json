@@ -18,15 +18,18 @@
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "pnpm clean && ./build/index.cjs",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "clean": "rm -rf dist",
     "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@types/node": "^20.10.5",
     "esbuild": "^0.19.10",
     "eslint": "^8.56.0",
     "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.7.0",
     "prettier": "^3.1.1",
+    "ts-jest": "^29.1.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }
