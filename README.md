@@ -8,6 +8,7 @@ My typescript project template. Integrates with:
 - ESM modules
 - TypeScript v5
 - ESLint/Prettier
+- Jest
 
 ## Node and TypeScript Configurations
 
@@ -73,4 +74,16 @@ files into a single JavaScript file.
 ```shell
 pnpm build
 node dist/index.cjs
+```
+
+## Unit Test
+
+This templates uses [Jest](https://jestjs.io/) test framework to run unit tests.
+
+Unit test files should be placed under src/ directory, with name `*.test.ts`.
+
+To run unit tests:
+
+```sh
+pnpm test
 ```
