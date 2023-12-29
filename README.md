@@ -87,3 +87,18 @@ To run unit tests:
 ```sh
 pnpm test
 ```
+
+## Magic Version Variable
+
+The global variable `__VERSION__` will be replaced by the version defined in `package.json` when
+esbuild building the project. For example:
+
+```js
+// Assume `version` field in package.json is "1.2.3".
+
+// source index.ts
+console.log(__VERSION__)
+
+// dest index.js
+console.log('1.2.3')
+```
