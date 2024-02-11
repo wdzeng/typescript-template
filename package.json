@@ -24,13 +24,13 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
-    "@types/node": "^20.11.5",
-    "esbuild": "^0.19.11",
+    "@types/node": "^20.11.17",
+    "esbuild": "^0.20.0",
     "eslint": "^8.56.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.8.0",
-    "prettier": "^3.2.4",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.9.1",
+    "prettier": "^3.2.5",
     "ts-jest": "^29.1.2",
-    "tsx": "^4.7.0",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   }
 }
