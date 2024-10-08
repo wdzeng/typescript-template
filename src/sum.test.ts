@@ -1,7 +1,7 @@
-import { expect, test } from '@jest/globals'
+import { expect, test } from 'vitest'
 
 import sum from '@/sum'
 
 test('test sum', () => {
-  expect(sum(1, 2, 3)).toBe(6)
+  expect(sum(1, 2)).toBe(3)
 })

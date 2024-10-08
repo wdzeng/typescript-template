@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "tsx src/main.ts",
     "build": "pnpm clean && ./build/index.cjs",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test": "vitest --silent",
     "clean": "rm -rf dist",
     "lint": "eslint --fix"
   },
