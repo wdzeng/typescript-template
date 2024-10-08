@@ -1,5 +1,6 @@
 // https://www.totaltypescript.com/tsconfig-cheat-sheet
 {
+  "include": ["src/**/*.ts"],
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
@@ -9,11 +10,12 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
+    "verbatimModuleSyntax": true,
 
     /* Strictness */
     "strict": true,
-    // This may cause some inconvenient behavior. See https://github.com/microsoft/TypeScript/issues/56389.
     "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
 
     /* If transpiling with TypeScript: */
     // "module": "NodeNext",

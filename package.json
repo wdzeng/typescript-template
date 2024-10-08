@@ -22,14 +22,16 @@
     "lint": "eslint --fix"
   },
   "devDependencies": {
-    "@jest/globals": "^29.7.0",
     "@types/node": "^20.16.11",
     "esbuild": "^0.24.0",
     "eslint": "^9.12.0",
     "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.11.1",
     "prettier": "^3.3.3",
-    "ts-jest": "^29.2.5",
     "tsx": "^4.19.1",
     "typescript": "~5.5.4"
+  },
+  "dependencies": {
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.2"
   }
 }
