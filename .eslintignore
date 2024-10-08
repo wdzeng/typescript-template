@@ -1,4 +1,0 @@
-jest.config.cjs
-.eslintrc.cjs
-build
-dist

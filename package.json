@@ -19,7 +19,7 @@
     "build": "pnpm clean && ./build/index.cjs",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
     "clean": "rm -rf dist",
-    "lint": "eslint src/ --ext .ts,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint --fix"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
