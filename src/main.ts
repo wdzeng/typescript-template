@@ -1,5 +1,5 @@
-import helloworld from '@/helloworld'
+import helloworld from '#/helloworld'
+import packageJson from '##/package.json' with { type: 'json' }
 
-// The `process.env.VERSION` is replaced in the build time.
-console.log('typescript template: %s', process.env.VERSION ?? 'development')
+console.log('typescript template: v%s', packageJson.version)
 helloworld()

@@ -16,24 +16,24 @@
   "type": "module",
   "bugs": "https://github.com/wdzeng/typescript-template/issues",
   "scripts": {
+    "start": "node src/main.ts",
     "dev": "tsx src/main.ts",
-    "build": "pnpm clean && ./build/index.cjs",
     "test": "vitest --silent",
-    "clean": "rm -rf dist",
     "lint": "eslint --fix"
   },
+  "imports": {
+    "##/*": "./*",
+    "#/*": "./src/*.ts"
+  },
   "devDependencies": {
-    "@types/node": "^20.17.27",
-    "esbuild": "^0.25.1",
-    "eslint": "^9.23.0",
-    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.14.3",
-    "prettier": "^3.5.3",
-    "tsx": "^4.19.3",
-    "typescript": "~5.8.2",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.9"
+    "@types/node": "^24.12.2",
+    "eslint": "^10.2.0",
+    "eslint-config-wdzeng": "github:wdzeng/eslint-config#semver:^0.16.0",
+    "prettier": "^3.8.1",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.3"
   },
   "engines": {
-    "node": "^20.19 || >=22"
+    "node": ">=24"
   }
 }
